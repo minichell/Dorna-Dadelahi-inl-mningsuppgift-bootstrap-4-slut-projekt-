@@ -17,5 +17,10 @@ exports.createInfo = (first, last, email, phone) => {
         phone: phone
     })
 
-    return info
+    exports.GetAllInfo = async() => {
+        var info = await Info.find({});
+    }
+
+
+    return info;
 }
