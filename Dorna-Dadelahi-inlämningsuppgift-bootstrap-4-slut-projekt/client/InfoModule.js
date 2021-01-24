@@ -4,7 +4,7 @@ const infoSchema = new mongoose.Schema({
     firstname: String,
     lastname: String,
     email: String,
-    phone: string
+    phone: String
 })
 
 const Info = mongoose.model ('Info', infoSchema);

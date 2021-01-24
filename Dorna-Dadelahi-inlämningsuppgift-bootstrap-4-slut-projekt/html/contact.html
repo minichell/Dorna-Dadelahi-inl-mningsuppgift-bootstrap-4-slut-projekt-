@@ -34,18 +34,18 @@
     </nav>
   </div>
 
-  <form class="needs-validation" novalidate="">
+  <form class="needs-validation" novalidate="" action = "/contact" method="POST">
     <div class="row">
       <div class="col-md-6 mb-3">
         <label for="firstName">First name</label>
-        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+        <input type="text" class="form-control" name ="firstName" id="firstName" placeholder="" value="" required="">
         <div class="invalid-feedback">
           Valid first name is required.
         </div>
       </div>
       <div class="col-md-6 mb-3">
         <label for="lastName">Last name</label>
-        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="" value="" required="">
         <div class="invalid-feedback">
           Valid last name is required.
         </div>
@@ -53,7 +53,7 @@
     </div>
     <div class="mb-3">
       <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="you@example.com">
+      <input type="email" class="form-control" name= "email" id="email" placeholder="you@example.com">
       <div class="invalid-feedback">
         Please enter a valid email address for shipping updates.
       </div>
@@ -63,7 +63,7 @@
 
     <div class="mb-3">
       <label for="address2">Phone Number</label>
-      <input type="text" class="form-control" id="address2" placeholder="+46">
+      <input type="text" class="form-control" name= "phoneNumber" id="address2" placeholder="+46">
     </div>
 
     

@@ -16,7 +16,7 @@ app.get('/contact', async (req, res) => {
 })
 
 app.post ('/contact', async (req,res) => {
-    var infos = InfoModule.createInfo(req.body.first, req.body.last, req.body.email, req.body.phone);
+    var infos = InfoModule.createInfo(req.body.firstName, req.body.lastName, req.body.email, req.body.phoneNumber);
     DBModule.createInfo(infors);
 
     var infos = await InfoModule.GetAllInfo();
