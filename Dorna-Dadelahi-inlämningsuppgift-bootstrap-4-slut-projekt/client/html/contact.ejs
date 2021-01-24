@@ -69,3 +69,11 @@
     <hr class="mb-4">
     <button class="btn btn-primary btn-lg btn-block" type="submit">Send</button>
   </form>
+  <% for( let i = 0; i < info.length; i++ ) { %>
+  <p><%- info[i].firstname %> </p>
+  <p><%- info[i].lastname %> </p>
+  <p><%- info[i].email %> </p>
+  <p><%- info[i].phone %> </p>
+  <% } %>
+</body>
+</html>
